@@ -1,0 +1,19 @@
+<!doctype html>
+
+<head>
+   <title>Calculate Percentage</title>
+</head>
+
+<body style='background-color:blue;'>
+    <label>Number:</label><input type='number' id='num1' />
+    <label>Total:</label><input type='number' id='total' />
+    <input type='button' onclick='CalculatePercentage()' value='CalculatePercentage' />
+    <script>
+        function CalculatePercentage() {
+            let number1 = parseFloat(document.getElementById('num1').value);
+            let total = parseFloat(document.getElementById('total').value);
+            let percent = (number1 * 100) / total + '%';
+            percent.innerhtml == 'percent'
+        }
+    </script>
+</body>

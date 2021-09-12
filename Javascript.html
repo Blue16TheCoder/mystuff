@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Learn Javascript</title>
+  <h1 class="TopHeaders">Javascript</h1>
+  <p class="italic TopHeaders"> Updated: June 13, 2021</p>
+  <h2 class="TopHeaders">This site teaches about the basics of Javascript making it helpful for a refresher or helps beginners understand
+    about Javascript.</p>
+    <h3 class="TopHeaders">About Javascript</h3>
+    <p class="TopHeaders">Javascript is a scripting language that is easy to use that can create websites and is the only coding language
+      web browsers understand.</p>
+
+    <style>
+      .Button {
+        background-color: #008000;
+        border: none;
+        color: #ff002b;
+        font-weight: 500;
+        padding: 15px 25px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .Button:hover {
+        background-color: #0000ff;
+        color: #7bdd18f1;
+        transition: 1s ease;
+        animation-name: hoverChange;
+        animation-duration: 14s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes hoverChange {
+        0% {
+          background-color: #0000ff;
+        }
+
+        35% {
+          background-color: #ffff00;
+        }
+
+        50% {
+          background-color: #ffa500;
+        }
+
+        99% {
+          background-color: #008000;
+        }
+
+        100% {
+          background-color: #0000ff;
+        }
+      }
+
+      .italic {
+        font-style: italic;
+      }
+
+      .style {
+        color: #ff0000;
+        font-size: 30px;
+      }
+
+      h1 {
+        color: #0000ff;
+        font-size: 60px;
+      }
+
+      input {
+        padding: 5px;
+      }
+
+      .TopHeaders {
+        text-align: center;
+      }
+    </style>
+
+</head>
+
+<body>
+  <h1 id="Head">This is a Heading!</h1>
+  <p id="Para" class="style">This is a paragraph!</p>
+  <p id="Style" class="style">This is a styled paragraph!</p>
+
+
+  <input id="Alert" type="button" onclick="Helloworld()" value="Alert!" />
+
+  <input id="Head" type="button" onclick="ChangeHead()" value="Change Heading!" />
+
+  <input id="Para" type="button" onclick="ChangePara()" value="Change Paragraph!" />
+
+  <input class="Button" type="button" onclick="ChangeStyle()" value="Change Styled Paragraph!" />
+
+  <script>
+    function Helloworld() {
+      document.getElementById("Alert").value;
+      let x = alert("HelloWorld");
+    }
+    function ChangePara() {
+      let xxx = document.getElementById("Para");
+      if (xxx.innerHTML == "This is a paragraph!") {
+        xxx.innerHTML = "The Paragraph has changed!";
+      } else if (xxx.innerHTML == "The Paragraph has changed!") {
+        xxx.innerHTML = "The Paragraph has changed again!";
+      } else if (xxx.innerHTML == "The Paragraph has changed again!") {
+        xxx.innerHTML = "This is a paragraph!";
+      } else {
+        xxx.innerText = "what";
+      }
+    }
+    function ChangeHead() {
+      let x = document.getElementById("Head");
+      if (x.innerHTML == "This is a Heading!") {
+        x.innerHTML = "The heading has changed!";
+      } else if (x.innerHTML == "The heading has changed!") {
+        x.innerHTML = "The heading has changed again!";
+      } else if (x.innerHTML == "The heading has changed again!") {
+        x.innerHTML = "This is a Heading!";
+      } else {
+        x.innerText = "what";
+      }
+    }
+    function ChangeStyle() {
+      let x = document.getElementById("Style");
+      if (x.innerHTML == "This is a styled paragraph!") {
+        x.innerHTML = "The styled paragraph has changed again!";
+        x.style.backgroundColor = "gray";
+        x.style.color = "blue";
+      } else {
+        x.innerHTML = "This is a styled paragraph!";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

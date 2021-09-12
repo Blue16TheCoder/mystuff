@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+<body>
+    <input type='number' id='' />
+    <input type='button' onclick='fibonacci()' />
+    <script>
+        function fibonacci(fibo) {
+            let a = 0;
+            let b = 1;
+            let d;
+            while (fibo > 1) {
+                d = a + b;
+                a = b;
+                b = d;
+                fibo--;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

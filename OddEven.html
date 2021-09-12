@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <title>Odd or even</title>
+
+<head>
+    <style>
+        input {
+            font-size: 100px;
+        }
+
+        body {
+            background-color: #afefee;
+        }
+    </style>
+</head>
+
+<body>
+    <input type='text' id='demo' />
+    <input type='button' value='Odd or Even' onclick='FindOddOrEven()' />
+
+    <script>
+        function FindOddOrEven() {
+            let x = parseInt(document.getElementById('demo').value);
+
+            if (x % 2 == 0) {
+                alert('Even');
+            }
+            else if (x % 2 == 1) {
+                alert('Odd');
+            }
+            else {
+                alert('NaN');
+            }
+        }
+    </script>
+    
+</body>
+
+
+</html>

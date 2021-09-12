@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    <title>Learn overflow</title>
+
+<body>
+    <h5>This is my overlow examples and their descriptions.</h5>
+    <div>
+        <p>This is a very long peice of paragraph. You know that my websites are better, why are you going to this!
+            I am soon going to merge this with some other project that I have so this won't be a seperate project
+            anymore.
+        </p>
+        <p>This is overflow hidden. If the paragraph is too large it will hide the excess words.</p>
+    </div>
+
+    <div>
+        <h1>This is a very long peice of paragraph. You know that my websites are better, why are you going to this!
+            I am soon going to merge this with some other project that I have so this won't be a seperate project
+            anymore.
+        </h1>
+        <p>This is overflow scroll which has a scroll bar if the paragraph is too large.</p>
+    </div>
+
+    <div>
+        <h2>This is a very long peice of paragraph. You know that my websites are better, why are you going
+            I am soon going to merge this with some other project that I have so this won't be a seperate p
+        </h2>
+        <p>This is overflow auto. If the paragraph is large then it will have a scroll bar and if it is too small then
+            it won't have a scroll bar. </p>
+    </div>
+
+    <div>
+        <h2>I am soon going to merge this with some </h2>
+        <p>This paragraph is small and won't need a scrollbar and that's what auto does, check if it needs a scrollbar.
+        </p>
+    </div>
+
+    <div>
+        <h3>This is a very long peice of paragraph. You know that my websites are better, why are you going
+            I am soon going to merge this with some other project that I have so this won't be a seperate p
+        </h3>
+        <p>In here I put a scrollbar-x which is that a scroll bar will only come horizontally and scrollbar-y which
+            would put it vertically. </p>
+    </div>
+
+    <div>
+        <h4>This is a very long peice of paragraph. You know that my websites are better, why are you going
+            I am soon going to merge this with some other project that I have so this won't be a seperate p
+        </h4>
+        <p>I put scrollbar-y which puts a scrollbar on the y-axis and I hidden the scrollbar-x so there won't be a
+            x-axis scrollbar.</p>
+    </div>
+
+    <style>
+        p {
+            width: 100px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        h1 {
+            width: 100px;
+            height: 200px;
+            overflow: scroll;
+        }
+
+        h2 {
+            width: 100px;
+            height: 200px;
+            overflow: auto;
+
+        }
+
+        div {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        h3 {
+            width: 100px;
+            height: 200px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+
+        h4 {
+            width: 100px;
+            height: 200px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        h5 {
+            text-align: center;
+            font-size: 25px;
+        }
+    </style>
+</body>
+
+</html>

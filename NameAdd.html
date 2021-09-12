@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Add your name</title>
+    <style>
+        p {
+            border: 2 inches solid #339944;
+            letter-spacing: 1px;
+            border-radius: 10px;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            padding: 5px;
+            margin: 3px #583758;
+            text-transform: capitalize;
+            background-color: #1518c9;
+            text-align: center;
+            animation-name: para;
+            animation-duration: 40s;
+            animation-iteration-count: infinite;
+            cursor: pointer;
+        }
+
+
+        @keyframes para {
+            0% {
+                background-color: #1518c9;
+                border-bottom: 5px dashed;
+            }
+
+            25% {
+                background-color: #12c230;
+                border-top: 5px solid;
+            }
+
+            50% {
+                background-color: #c4c123bd;
+                border-left: 5px double;
+            }
+
+            100% {
+                background-color: #be521c;
+                border-right: 5px dotted;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>Click me to add your name!</p>
+    <p>This is where you can add your name to the paragraph so you can see your name.</p>
+    <p>Soon going to be moved to Learn Javascript.</p>
+
+    <script>
+
+        let ChangeName = document.querySelector('p');
+        function Paragraphs() {
+            let AddParagraph = prompt('Your name');
+            ChangeName.innerHTML = 'Hi' + ' ' + AddParagraph + '!';
+        }
+        document.addEventListener('click', Paragraphs);
+    </script>
+</body>
+
+</html>

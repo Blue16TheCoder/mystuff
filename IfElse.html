@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Boy or girl Quiz</title>
+
+    <style>
+        * {
+            text-align: center;
+        }
+
+        body {
+            background-color: #00ffff;
+        }
+
+        label {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+            margin: auto;
+        }
+
+        input:hover {
+            background-color: #f0ffff;
+            color: #8a2be2;
+            cursor: pointer;
+        }
+
+        input {
+
+            font-size: 24px;
+            background-color: #4169e1;
+        }
+
+        h3 {
+            margin: auto;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <label>
+        Boy or Girl:
+    </label><br>
+    <label>Boy</label> <input type="radio" name="gender" id="b" value="boy" /><br>
+    <label>Girl</label> <input type="radio" name="gender" id="g" value="girl" /><br>
+    <label>Other</label> <input type="radio" name="gender" id="none" value="girl" /><br>
+    <input type="button" value="Find out Boy or Girl or other" onclick="BoyOrGirl()" />
+    <div>
+        <h3 id="selection"></h3>
+    </div>
+    <script>
+        function BoyOrGirl() {
+            let b = document.getElementById("b").checked;
+            let g = document.getElementById("g").checked;
+            let none = document.getElementById("none").checked;
+            if (b == true) {
+                document.getElementById("selection").innerText = "You are a boy!";
+                document.body.style.backgroundColor = "skyblue";
+            }
+            else if (none == true) {
+                document.getElementById("selection").innerText = "You are other gender!";
+                document.body.style.backgroundColor = "grey";
+            }
+            else if (g == true) {
+                document.getElementById("selection").innerText = "You are a Girl!";
+                document.body.style.backgroundColor = "pink";
+            }
+            else {
+                document.getElementById("selection").innerText = "Please check your selection again."
+                document.body.style.backgroundColor = "red";
+            }
+        }     
+    </script>
+</body>
+
+</html>
