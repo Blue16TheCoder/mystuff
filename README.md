@@ -1,1 +1,1 @@
-# mystuff is all of my coding projects that I make.
+# mystuff is all of my coding projects that I made.
