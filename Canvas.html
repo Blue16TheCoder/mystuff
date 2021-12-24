@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rectangle in Canvas</title>
+        <link>
+    </head>
+    <body>
+        <canvas style="border-style: solid; width:1000px; height:500px;" id="rectangleCanvas"></canvas>
+        <script>
+            let rectangle = document.getElementById('rectangleCanvas');
+            let rectangleTwo = rectangle.getContext("2d");
+                rectangleTwo.fillStyle = 'orange';
+                rectangleTwo.fillRect(100,25,100,100);     
+        </script>
+    </body>
+</html>

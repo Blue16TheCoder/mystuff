@@ -1,9 +1,14 @@
+/* Styles for the document*/
 * {
     background-color: #d9ffff;
     font-family: 'Alata';
 }
 
+body {
+    padding-top: 60px;
+}
 
+/*Styles for table */
 th,
 td {
     width: 230px;
@@ -14,16 +19,17 @@ td {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+table {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*Styles for list*/
 span {
     font-size: 20px;
     margin: 20px;
     width: 20vw;
     display: inline-block;
-}
-
-table {
-    display: flex;
-    justify-content: flex-start;
 }
 
 li {
@@ -39,24 +45,22 @@ li {
     font-weight: 900;
 }
 
-#italic {
-    font-style: italic;
+.bottomthings {
+    border-bottom: 2px solid #000000;
 }
 
+/* Styles for introduction */
 h1,
 p,
 h2 {
     text-align: center;
 }
 
-.bottomthings {
-    border-bottom: 2px solid #000000;
+#italic {
+    font-style: italic;
 }
 
-body {
-    padding-top: 60px;
-}
-
+/*Styles for navbar*/
 ul {
     padding: 0px;
     margin: 0px;
