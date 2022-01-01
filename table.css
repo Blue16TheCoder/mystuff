@@ -10,7 +10,8 @@ body {
 
 /*Styles for table */
 th,
-td {
+td,
+small{
     width: 230px;
     height: 40px;
     background-color: #eef115;
