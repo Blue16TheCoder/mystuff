@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random Background</title>
+    <style>
+        p {
+            font-size: 60px;
+            text-align: center;
+        }
+
+        input {
+            border-radius: 30px;
+            width: 600px;
+            height: 100px;
+            font-size: 70px;
+            background-color: #5b7ef3de;
+        }
+
+        .centered {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p id='content'>Make the background random when you click the button. The background will change each time you click
+        the button.
+        This is will be moved to javascript.html or the Learn javascript website soon. This website has an paragraph and
+        an button.
+    </p>
+    <p id='showRgb'>RGB:</p>
+    <div class="centered">
+        <input type="button" value="Change color" id="backgroundChanger">
+    </div>
+    <script>
+        let getBtn = document.getElementById('backgroundChanger');
+        getBtn.onclick = randomColor;
+        let para = document.getElementById('content');
+        // Made function that does all the random coloring and showing the rgb.
+        function randomColor() {
+            let Red = Math.floor(Math.random() * 255);
+            let Green = Math.floor(Math.random() * 255);
+            let Blue = Math.floor(Math.random() * 255);
+            let rgb = 'rgb(' + Red + ',' + Green + ',' + Blue + ')';
+            let finalProduct = para.style.backgroundColor = rgb;
+            let showingRgb = document.getElementById('showRgb');
+            showingRgb.innerHTML = finalProduct;
+        }
+
+    </script>
+</body>
+
+</html>

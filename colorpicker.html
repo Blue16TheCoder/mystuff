@@ -1,22 +1,15 @@
 <!doctype html>
 <html>
+  <head>
+    <title>Background selector</title>
+  </head>
+  <body>
+ <input type="color" id="backgroundSelector">
+ <script>
+   let referencingColorPicker = document.getElementById('backgroundSelector');
+   referencingColorPicker.style.backgroundColor= 'backgroundSelector';
+   localStorage.setItem('input', 'output');
 
-<head>
-  <style>
-    body {
-      width: 700px;
-      height: 1500px;
-    }
-  </style>
-  <title>Background Selector</title>
-</head>
-
-<body>
- <input type="color" name="Background Chooser" id="colors">
-  <script>
-    localStorage.getItem('inputColor', 'OutputColor');
-  </script>
-
-</body>
-
+ </script>
+  </body>
 </html>

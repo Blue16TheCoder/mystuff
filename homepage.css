@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     font-family: Work Sans;
-    background-color: #fdf9c1;
+    background-color: #50bdfe;
 }
 
 p,div,h1,h2,h3 {
@@ -31,14 +31,14 @@ ul a {
     font-size: 2vw;
     color: #000000;
     text-align: center;
-    background-color: #48ff38;
+    background-color: #00f8ca;
     user-select: none;
     border: 1px;
     width: 20vw;
 }
 
 a:hover {
-    background-color: #86df2ef1;
+    background-color: #fd6c76;
 }
 
 a:last-child {
