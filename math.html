@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Learning javascript math</title>
+    <style>
+        h1,
+        p {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h1>How to do Math in Javascript</h1>
+
+    <p>Check console.log to see math stuff. Coming in UI soon! Will be merged into javascript.</p>
+
+    <p>To do square roots do Math.sqrt(Number). You can do this inside console or make an variable.</p>
+
+    <p>To make exponential notation make an variable and put in some big number. Then use that variable to do the method
+        toExponential (<abbr title="Number after digit">NAD</abbr>). Then put that method in the same variable. Ex:
+        variable.toExponential().</p>
+    <p>To make an number a specific lenght use variable.toPrecision to specify how much numbers you want. Put the number
+        you want in a variable and use that variable once you used that number.</p>
+
+    <script>
+        // Shows square root of number
+        let sqaureRoot = Math.sqrt(27);
+        console.log(sqaureRoot);
+        // Shows exponential notation of number
+        let exponential = 3.59333828949
+        exponential = exponential.toExponential(3);
+        console.log(exponential);
+        // Shows certain number of digits
+        let precision = 2000000
+        precision = precision.toPrecision(4);
+        console.log(precision);
+        console.log(Math.E);
+    </script>
 </body>
+
 </html>
