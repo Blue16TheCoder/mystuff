@@ -1,75 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
-
+  <head>
     <title>Prime Number calcuation</title>
 
     <style>
-        input {
-            display: inline-block;
-            text-align: center;
-        }
+      input {
+        display: inline-block;
+        text-align: center;
+      }
 
-        label {
-            color: #b1e05a;
-            display: block;
-            font-size: xx-large;
-        }
+      label {
+        color: #0004ff;
+        display: block;
+        font-size: xx-large;
+      }
 
-        body {
-            text-align: center;
-        }
+      body {
+        text-align: center;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Prime Number calcuation</h1>
-    <p>Want to check some answers? Well, you can check with this prime number calculator!</p>
-    <input type='number' id='numbers' oninput='IsPrime()' />
-    <label id='result'>Result</label>
-    <p>Prime Numbers are numbers that can be multipied by only 2 factors and every prime <br>
-        number has similar factors and they are one and themselves like 17, it is multipied by 1 and 17.
+    <p>
+      Want to check some answers? Well, you can check with this prime number
+      calculator!
     </p>
-    <p>Composite numbers are numbers that have more than 2 factors and they can be multipied by more ways <br>
-        and they include 9 since it can be multipied by 1, 9 and 3 so it is a composite number.
+    <input type="number" id="numbers" oninput="IsPrime()" />
+    <label id="result">Result</label>
+    <p>
+      Prime Numbers are numbers that can be multipied by only 2 factors and
+      every prime <br />
+      number has similar factors and they are one and themselves like 17, it is
+      multipied by 1 and 17.
     </p>
-    <p>Special number is a number that is not prime nor composite because they only have one factor. The <br>
-        only special number is 1 because 1 is multipied by the only factor: 1.
+    <p>
+      Composite numbers are numbers that have more than 2 factors and they can
+      be multipied by more ways <br />
+      and they include 9 since it can be multipied by 1, 9 and 3 so it is a
+      composite number.
+    </p>
+    <p>
+      Special number is a number that is not prime nor composite because they
+      only have one factor. The <br />
+      only special number is 1 because 1 is multipied by the only factor: 1.
     </p>
 
     <script>
-        function IsPrime() {
-            let NaN = null;
-            let notPrime = false;
-            let number = parseInt(document.getElementById('numbers').value);
-            for (let i = 2; number > i; i++) {
-                if (number % i == 0) {
-                    notPrime = true;
-                    break;
-                }
-
-            }
-            if (notPrime) {
-                document.getElementById('result').innerHTML = number + ' is a composite number!';
-                document.body.style.backgroundColor = '#080076';
-            }
-            else {
-                document.getElementById('result').innerHTML = number + ' is a prime number!';
-                document.body.style.backgroundColor = '#76a389';
-            }
-            if (result.innerHTML == 'NaN is a prime number!') {
-                document.getElementById('result').innerHTML = 'Please check your selection again!';
-                document.body.style.backgroundColor = '#a83232';
-            }
-            if (result.innerHTML == '1 is a prime number!'){
-                document.getElementById('result').innerHTML = '1 is a special number!'
-                document.body.style.backgroundColor = '#561234';
-            }
-
+      function IsPrime() {
+        let NaN = null;
+        let notPrime = false;
+        let number = parseInt(document.getElementById("numbers").value);
+        for (let i = 2; number > i; i++) {
+          if (number % i == 0) {
+            notPrime = true;
+            break;
+          }
         }
+        if (notPrime) {
+          document.getElementById("result").innerHTML =
+            number + " is a composite number!";
+          document.body.style.backgroundColor = "#4dbeff";
+        } else {
+          document.getElementById("result").innerHTML =
+            number + " is a prime number!";
+          document.body.style.backgroundColor = "#6eff30";
+        }
+        if (result.innerHTML == "NaN is a prime number!") {
+          document.getElementById("result").innerHTML =
+            "Please check your selection again!";
+          document.body.style.backgroundColor = "#ff4400";
+        }
+        if (result.innerHTML == "1 is a prime number!") {
+          document.getElementById("result").innerHTML =
+            "1 is a special number!";
+          document.body.style.backgroundColor = "#f5ff30";
+        }
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
