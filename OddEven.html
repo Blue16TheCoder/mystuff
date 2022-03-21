@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-    <title>Odd or even</title>
+<title>Odd or even checker</title>
 
 <head>
     <style>
@@ -11,12 +11,19 @@
         body {
             background-color: #afefee;
         }
+        p {
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
-    <input type='text' id='demo' />
-    <input type='button' value='Odd or Even' onclick='FindOddOrEven()' />
+    
+    <input type='text' id='demo' style="margin-left:15%;" />
+    <input type='button' value='Odd or Even' onclick='FindOddOrEven()' style="margin-left: 30%;"/>
+    <p>*Only works for postive numbers.</p>
 
     <script>
         function FindOddOrEven() {
@@ -33,7 +40,7 @@
             }
         }
     </script>
-    
+
 </body>
 
 

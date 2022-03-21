@@ -2,9 +2,10 @@
 <html>
 
 <body>
-    <input type='number' id='' />
-    <input type='button' onclick='fibonacci()' />
+    <input type='number' id='fibo' />
+    <input type='button' onclick='fibonacci()' value="Click me to see result"/>
     <script>
+        let userInput = document.getElementById('fibo');
         function fibonacci(fibo) {
             let a = 0;
             let b = 1;
