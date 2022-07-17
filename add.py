@@ -1,0 +1,1 @@
+getNumber = input('Enter first valid number:')
