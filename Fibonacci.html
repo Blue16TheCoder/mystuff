@@ -2,21 +2,21 @@
 <html>
 
 <body>
-    <input type='number' id='fibo'/>
-    <input type='button' onclick='fibonacci()' value="Click me to see result"/>
-    <script>
-        function fibonacci () {
-   let count = 10; //print 10 fibonacci numbers
-   let x = 0; //Counter for loop variable
-   let num1 = 0; //1st number
-   let num2 = 1; // 2nd number 
-   if (x++ < count) console.log(num1); // adding num1 into console if less than counter
-   if (x++ < count) console.log(num2); // adding num 2 into console if less than counter
-   while(x < count){
-       console.log(num1+num2); //adding both numbers and putting in console
-       [num1,num2] = [num1+num2]; // pushing numbers back
-   }
-}
+    <input type='number' id='fibo' />
+    <input type='button' onclick='fibonacci()' value="Click me to see result" />
+    <script id="fibo">
+        function fibonacci() {
+            let count = 10; //print 10 fibonacci numbers
+            let x = 0; //Counter for loop variable
+            let num1 = 0; //1st number
+            let num2 = 1; // 2nd number 
+            if (x++ < count) console.log(num1); // adding num1 into console if less than counter
+            if (x++ < count) console.log(num2); // adding num 2 into console if less than counter
+            while (x < count) {
+                console.log(num1 + num2); //adding both numbers and putting in console
+                [num1, num2] = [num1 + num2]; // pushing numbers back
+            }
+        }
     </script>
 </body>
 
